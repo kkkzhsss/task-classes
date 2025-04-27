@@ -6,21 +6,21 @@
 - Класс должен иметь метод decrement, который уменьшает counter на 1 и возвращает результат
  */
 export class Counter {
-    count: number = 0;
+    counter: number = 0;
 
     constructor(start?: number) {
         if (start) {
-            this.count = start;
+            this.counter = start;
         }
     }
 
     increment(): number {
-        this.count++;
-        return this.count;
+        this.counter++;
+        return this.counter;
     }
     decrement(): number {
-        this.count--;
-        return this.count;
+        this.counter--;
+        return this.counter;
     }
 
 }
